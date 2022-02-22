@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#574A93C3">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Εγγραφή"
+        android:textColor="#474747"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EtName"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Όνομα"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/EtSurName"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Επώνυμο"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/EtName"
+        app:layout_constraintStart_toStartOf="@+id/EtName"
+        app:layout_constraintTop_toBottomOf="@+id/EtName" />
+
+    <EditText
+        android:id="@+id/EtEmail"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/EtSurName"
+        app:layout_constraintStart_toStartOf="@+id/EtSurName"
+        app:layout_constraintTop_toBottomOf="@+id/EtSurName" />
+
+    <EditText
+        android:id="@+id/EtPass"
+        android:layout_width="303dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/EtEmail"
+        app:layout_constraintStart_toStartOf="@+id/EtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/EtEmail" />
+
+    <Button
+        android:id="@+id/BtRegister"
+        android:layout_width="152dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#28FF5722"
+        android:text="Εγγραφή"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
